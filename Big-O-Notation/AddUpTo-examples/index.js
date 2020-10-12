@@ -3,6 +3,7 @@
 
 
 // first solution 
+// it has loop inside, and as n grows loop grows as well. so this O(n)
 function addUpTo(n) {
     // create total variable accumulator
     let total = 0;
@@ -20,6 +21,8 @@ function addUpTo(n) {
 
 // second solution
 // short one line and using math
+// this one has only 3 oporations (*, +, /)
+// grows of n is not reflected on runtime so this 0(1)
 function addUpTo(n) {
     return n * (n+1) / 2;
 }
